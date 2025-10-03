@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Morale - Online Resell Store</title>
+  <style>
+    /* Simple, clean, and consistent with your original content */
+    :root {
+      --bg: #000;         /* black */
+      --text: #d0d0d0;    /* soft gray */
+      --muted: #9a9a9a;   /* muted gray */
+      --white: #ffffff;   /* white */
+      --border: #1f1f1f;  /* subtle border */
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Times New Roman', Times, serif; /* keep original typeface */
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .wrapper {
+      min-height: 100svh; /* full height, safe for mobile */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 16px;
+    }
+
+    .logo { margin: 0 0 16px; text-align: center; }
+    .logo img {
+      width: min(240px, 65vw);
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .content {
+      max-width: 720px;
+      width: 100%;
+      text-align: center;
+      margin: 12px auto 0;
+    }
+
+    h1 {
+      color: var(--muted);
+      font-size: clamp(22px, 5vw, 36px);
+      font-weight: 700;
+      margin: 0 0 8px;
+      letter-spacing: 0.5px;
+    }
+
+    p {
+      margin: 0;
+      font-size: 18px;
+      color: var(--muted);
+    }
+
+    footer {
+      width: 100%;
+      max-width: 720px;
+      margin: 40px auto 0;
+      padding: 16px 0 0;
+      text-align: center;
+      font-size: 14px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+
+    /* Respect users who prefer reduced motion (no animations used, but future-safe) */
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrapper">
+    <div class="logo">
+      <img src="morale.PNG" alt="Morale Logo" />
+    </div>
+
+    <div class="content">
+      <h1>Welcome to Morale</h1>
+      <p>
+        Morale is an online resell store based in Yogyakarta, Indonesia. 
+        We specialize in curating and reselling fashion items, 
+        accessories, and lifestyle products. Our mission is to bring unique, 
+        stylish, and affordable pieces to our customers, while building a 
+        strong community around culture and fashion.
+      </p>
+    </div>
+
+    <footer>
+      © 2025 Morale - Yogyakarta, Indonesia
+    </footer>
+  </main>
+</body>
+</html>
